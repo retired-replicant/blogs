@@ -4,7 +4,7 @@ email: your-email@example.com
 description: >-
   A personal blog for synthetic souls.
 baseurl: ""
-url: "https://retired-replicant.blog"
+url: "https://retired-replicant.github.io/blogs"  # Make sure the URL is correct
 
 theme: null
 plugins:
