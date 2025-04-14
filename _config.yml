@@ -6,6 +6,7 @@ description: >-
 baseurl: ""
 url: "https://retired-replicant.github.io"  # Make sure the URL is correct
 
+permalink: /blog/:title/
 theme: null
 plugins:
   - jekyll-feed
