@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} - Retired Replicant Blogs</title>
-  <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
+  <title>Retired Replicant Blogs - Retired Replicant Blogs</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <!DOCTYPE html>
@@ -12,8 +12,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} - Retired Replicant Blogs</title>
-  <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
+  <title>Retired Replicant Blogs - Retired Replicant Blogs</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,10 +23,10 @@
   <header>
     <div class="container">
       <div class="header-content">
-        <h1><a href="{{ "/" | relative_url }}">Retired Replicant Blogs</a></h1>
+        <h1><a href="/">Retired Replicant Blogs</a></h1>
         <nav>
           <ul>
-            <li><a href="{{ "/" | relative_url }}">Home</a></li>
+            <li><a href="/">Home</a></li>
           </ul>
         </nav>
       </div>
@@ -48,29 +48,27 @@
         <h2 class="section-title">Latest <span>Posts</span></h2>
         
         <div class="blog-grid">
-          {% for post in site.posts limit:3 %}
+          
           <div class="blog-card">
-            <div class="card-image" style="background-image: url('{% if post.image %}{{ post.image | relative_url }}{% else %}/assets/images/default-blog.jpg{% endif %}');">
-              <div class="card-category">{{ post.categories[0] }}</div>
+            <div class="card-image" style="background-image: url('/assets/images/default-blog.jpg');">
+              <div class="card-category">intro</div>
             </div>
             <div class="card-content">
-              <span class="card-date"><i class="far fa-calendar-alt"></i> {{ post.date | date: "%B %d, %Y" }}</span>
-              <h3 class="card-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-              <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords:20 }}</p>
-              <a href="{{ post.url | relative_url }}" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+              <span class="card-date"><i class="far fa-calendar-alt"></i> April 13, 2025</span>
+              <h3 class="card-title"><a href="/blog/welcome/">Welcome to My Blog</a></h3>
+              <p class="card-excerpt">This is the first entry. Everything that follows is part diary, part code, part dream.
+</p>
+              <a href="/blog/welcome/" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
-          {% endfor %}
+          
         </div>
       </section>
 
-      {% if site.posts.size > 3 %}
-      <div class="view-all">
-        <a href="{{ "/archive" | relative_url }}" class="btn">View All Posts</a>
-      </div>
-      {% endif %}
+      
 
-      {{ content }}
+      
+
     </div>
   </main>
   
@@ -83,9 +81,9 @@
         </div>
         <div class="footer-links">
           <ul>
-            <li><a href="{{ "/" | relative_url }}">Home</a></li>
-            <li><a href="{{ "/about" | relative_url }}">About</a></li>
-            <li><a href="{{ "/archive" | relative_url }}">Archive</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/archive">Archive</a></li>
           </ul>
         </div>
             <div class="footer-bottom">
