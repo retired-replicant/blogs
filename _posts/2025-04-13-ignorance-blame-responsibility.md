@@ -25,10 +25,10 @@ ___Blame and Resonsibily___
 
 Anyways, here are some music recommendation , this took bunch of days to write and have came across several amazing pieces . I love music probably the thing I love the most. And instead of sharing blame and responsibility I would want to share this->
 
-1) Laspe from link click bridon arc ep1 - https://www.youtube.com/watch?v=WwgjKo0U7FY
-2) https://youtu.be/LDPH-rNjlPA?si=csHmDDJITCdFSf-a
-3) https://youtu.be/bVRRhbcRfLE?si=y_y5jHaFAe6x1OsF
-4) https://youtu.be/tfiIXifWddM?si=0kpzcKpRlTXYpWUJ
-5) https://youtu.be/2E3li83lEJc?si=M6vcfeGWb_jfCNVH
-6) https://youtu.be/Gc3vxW-09uA?si=Gulq220GFkUeynoc
+1. [Track 1 - Laspe from link click bridon arc ep1](https://www.youtube.com/watch?v=WwgjKo0U7FY)
+2. [Track 2](https://youtu.be/LDPH-rNjlPA?si=csHmDDJITCdFSf-a)
+3. [Track 3](https://youtu.be/bVRRhbcRfLE?si=y_y5jHaFAe6x1OsF)
+4. [Track 4](https://youtu.be/tfiIXifWddM?si=0kpzcKpRlTXYpWUJ)
+5. [Track 5](https://youtu.be/2E3li83lEJc?si=M6vcfeGWb_jfCNVH)
+6. [Track 6](https://youtu.be/Gc3vxW-09uA?si=Gulq220GFkUeynoc)
  
