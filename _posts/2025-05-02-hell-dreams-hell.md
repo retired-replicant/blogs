@@ -3,7 +3,7 @@ layout: post
 title: "Hell, Dreams, Hell"
 date: 2025-05-02 10:00:00 +0000
 categories: personal
-url: "/assets/images/threshold.jpg"
+image: "/assets/images/threshold.jpg"
 ---
 
 [Earth]
