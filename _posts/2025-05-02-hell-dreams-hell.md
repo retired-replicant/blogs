@@ -51,4 +51,5 @@ What awaits beyond the threshold
 Music Recommendation -  
 1. [New signalis album - Signalis Memories ](https://youtu.be/axMffgvNQOs?si=DTcHGaFGxnJhLSaK)
 2. [Track 2 MNHR](https://youtu.be/iZISFM0pM6Q?si=hB1fYB5lMlaTq2tX)
-2. [Track 3 Red Gate](https://youtu.be/wzJnYxerWic?si=bQPr8ZeEZ1Qi9sfN)
+3. [Track 3 Red Gate](https://youtu.be/wzJnYxerWic?si=bQPr8ZeEZ1Qi9sfN)
+4. [Track 4 Eurasia rust](https://youtu.be/Jio_0vQCAZU?si=qeL4qxt84k7gWXIR)
