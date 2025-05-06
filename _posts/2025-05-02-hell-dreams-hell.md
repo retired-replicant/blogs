@@ -41,7 +41,7 @@ But it was the night of day before the exam , My sweet dream also came to end . 
 
 Dreams sandwitched between hells.
   
-And i think this cycles goes on for an individual, with many individuals
+And i think this cycles goes on, for an individual, with many individuals and if none of us here are by choice then
 I wonder ...
 What awaits beyond the threshold
 
