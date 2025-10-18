@@ -1,94 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>{{ page.title }} - Retired Replicant Blogs</title>
   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-
-<body class="dark-theme">
-  <header>
+<body class="minimal-theme">
+  <header class="site-header">
     <div class="container">
-      <div class="header-content">
-        <h1><a href="{{ '/' | relative_url }}">Retired Replicant Blogs</a></h1>
-        <nav>
-          <ul>
-            <li><a href="{{ '/' | relative_url }}">Home</a></li>
-          </ul>
-        </nav>
-      </div>
+      <h1 class="site-title"><a href="{{ '/' | relative_url }}">Retired Replicant Blogs</a></h1>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <section class="hero">
     <div class="container">
-      <div class="hero-content">
-        <h2>Exploring Life Beyond the Baseline</h2>
-        <p>Memories, thoughts, and digital dreams from those who've seen things you wouldn't believe.</p>
-      </div>
+      <h2 class="hero-title">Thoughts & Notes</h2>
+      <p class="hero-sub">Short reflections and quiet observations.</p>
     </div>
   </section>
 
-  <main>
+  <main class="site-main">
     <div class="container">
-      <section class="featured-posts">
-        <h2 class="section-title">Latest <span>Posts</span></h2>
-        <div class="blog-grid">
+      <section class="posts-preview">
+        <h3 class="section-title">Latest posts</h3>
+        <div class="grid">
           {% for post in site.posts limit:3 %}
-          <a href="{{ post.url | relative_url }}" class="blog-card">
-            <div class="card-image"
-              style="background-image: url('{% if post.image %}{{ post.image | relative_url }}{% else %}/assets/images/default-blog.jpg{% endif %}');">
-              <div class="card-category">{{ post.categories[0] }}</div>
-            </div>
-            <div class="card-content">
-              <span class="card-date"><i class="far fa-calendar-alt"></i> {{ post.date | date: "%B %d, %Y" }}</span>
-              <h3 class="card-title">{{ post.title }}</h3>
-              <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords:20 }}</p>
-              <span class="read-more">Read More <i class="fas fa-arrow-right"></i></span>
-            </div>
-          </a>
+          <article class="post-card">
+            <a href="{{ post.url | relative_url }}" class="post-link">
+              <div class="post-meta">
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+                <div class="post-cats">
+                  {% for cat in post.categories %}
+                    <span class="post-cat">{{ cat }}</span>
+                  {% endfor %}
+                </div>
+              </div>
+              <h4 class="post-title">{{ post.title }}</h4>
+              <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords:18 }}</p>
+            </a>
+          </article>
           {% endfor %}
         </div>
+        {% if site.posts.size > 3 %}
+        <div class="more">
+          <a href="{{ '/archive' | relative_url }}" class="btn">All posts</a>
+        </div>
+        {% endif %}
       </section>
-
-      {% if site.posts.size > 3 %}
-      <div class="view-all">
-        <a href="{{ '/archive' | relative_url }}" class="btn">View All Posts</a>
-      </div>
-      {% endif %}
 
       {{ content }}
     </div>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <h3>Retired Replicant Blogs</h3>
-          <p>Memories lost like tears in rain</p>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <strong>Retired Replicant Blogs</strong>
+          <small>Notes and memory</small>
         </div>
-        <div class="footer-links">
+        <nav class="footer-nav">
           <ul>
             <li><a href="{{ '/' | relative_url }}">Home</a></li>
             <li><a href="{{ '/about' | relative_url }}">About</a></li>
             <li><a href="{{ '/archive' | relative_url }}">Archive</a></li>
           </ul>
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2025 Retired Replicant Blogs. All rights reserved.</p>
-        </div>
+        </nav>
+      </div>
+      <div class="footer-copy">
+        <small>&copy; 2025 Retired Replicant Blogs</small>
       </div>
     </div>
   </footer>
 </body>
-
 </html>
