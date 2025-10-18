@@ -2,7 +2,7 @@
 layout: post
 title: "Piano ,Wa, Hiteru?"
 date: 2025-09-15
-categories: life
+categories: personal
 image: "/assets/images/piano_wa_hiteru.png"
 ---
 
