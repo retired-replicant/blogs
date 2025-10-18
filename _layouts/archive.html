@@ -1,15 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>{{ page.title }} - Retired Replicant Blogs</title>
   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    .filters { display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-bottom:20px; }
+    .filter-btn { background:transparent; border:1px solid rgba(255,255,255,0.12); padding:8px 12px; border-radius:6px; cursor:pointer; font-weight:600; }
+    .filter-btn.active { background:rgba(255,255,255,0.06); box-shadow:0 2px 8px rgba(0,0,0,0.3); }
+    #search-input { padding:8px 12px; border-radius:6px; border:1px solid rgba(255,255,255,0.08); min-width:220px; }
+    .hidden { display:none !important; }
+    .category-badge { font-size:12px; padding:4px 8px; border-radius:12px; background:rgba(0,0,0,0.35); color:#fff; display:inline-block; }
+  </style>
 </head>
 <body class="dark-theme">
   <header>
@@ -31,12 +38,32 @@
     <section class="archive">
       <div class="container">
         <h1 class="section-title">{{ page.title }}</h1>
-        <div class="blog-grid">
+
+        <div class="filters" aria-label="post filters">
+          <div class="category-filters" role="tablist" aria-label="Categories">
+            <button class="filter-btn active" data-filter="all" type="button">All</button>
+            {% for category in site.categories %}
+              <button class="filter-btn" data-filter="{{ category[0] | slugify }}" type="button">{{ category[0] }}</button>
+            {% endfor %}
+          </div>
+
+          <div style="margin-left:auto">
+            <input id="search-input" type="search" placeholder="Search posts by title or excerpt">
+          </div>
+        </div>
+
+        <div class="blog-grid" id="blog-grid">
           {% for post in site.posts %}
-          <a href="{{ post.url | relative_url }}" class="blog-card">
+          <a href="{{ post.url | relative_url }}"
+             class="blog-card"
+             data-title="{{ post.title | downcase }}"
+             data-excerpt="{{ post.excerpt | strip_html | strip_newlines | truncatewords:30 | downcase }}"
+             data-categories="{{ post.categories | join: '|' }}">
             <div class="card-image"
-              style="background-image: url('{% if post.image %}{{ post.image | relative_url }}{% else %}/assets/images/default-blog.jpg{% endif %}');">
-              <div class="card-category">{{ post.categories[0] }}</div>
+                 style="background-image: url('{% if post.image %}{{ post.image | relative_url }}{% else %}/assets/images/default-blog.jpg{% endif %}');">
+              <div class="card-category">
+                <span class="category-badge">{{ post.categories[0] }}</span>
+              </div>
             </div>
             <div class="card-content">
               <span class="card-date"><i class="far fa-calendar-alt"></i> {{ post.date | date: "%B %d, %Y" }}</span>
@@ -71,5 +98,60 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    function slugify(s) {
+      return String(s).toLowerCase().trim()
+        .replace(/&/g,'-and-')
+        .replace(/[\s\W-]+/g,'-')
+        .replace(/^-+|-+$/g,'');
+    }
+
+    function postCategoriesFromDataAttr(attr) {
+      if (!attr) return [];
+      return attr.split('|').map(function(c){ return slugify(c); });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var grid = document.getElementById('blog-grid');
+      var posts = Array.prototype.slice.call(grid.querySelectorAll('.blog-card'));
+      var filterButtons = Array.prototype.slice.call(document.querySelectorAll('.filter-btn'));
+      var searchInput = document.getElementById('search-input');
+      var activeCategory = 'all';
+      var searchTerm = '';
+
+      function applyFilters() {
+        var st = searchTerm.trim().toLowerCase();
+        posts.forEach(function(post){
+          var title = (post.getAttribute('data-title') || '').toLowerCase();
+          var excerpt = (post.getAttribute('data-excerpt') || '').toLowerCase();
+          var cats = postCategoriesFromDataAttr(post.getAttribute('data-categories'));
+
+          var matchesCategory = activeCategory === 'all' || cats.indexOf(activeCategory) !== -1;
+          var matchesSearch = st === '' || title.indexOf(st) !== -1 || excerpt.indexOf(st) !== -1;
+
+          if (matchesCategory && matchesSearch) {
+            post.classList.remove('hidden');
+          } else {
+            post.classList.add('hidden');
+          }
+        });
+      }
+
+      filterButtons.forEach(function(btn){
+        btn.addEventListener('click', function(){
+          filterButtons.forEach(function(b){ b.classList.remove('active'); });
+          btn.classList.add('active');
+          activeCategory = btn.getAttribute('data-filter') || 'all';
+          applyFilters();
+        });
+      });
+
+      searchInput.addEventListener('input', function(e){
+        searchTerm = e.target.value;
+        applyFilters();
+      });
+    });
+  </script>
 </body>
 </html>
