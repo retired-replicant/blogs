@@ -51,3 +51,23 @@ My fault of consuming too much fiction that i somehow became a stranger in this 
 I need to sleep , i need to go to gym tomorrow. For who ? for me, to stay alive atleast till i can achieve my goals , atleast ones that are possible. I want to keep on talking but i got nothing to say more , idk why i am still typing but yeah for some reason i dont wanna leave , i dont wanna sleep now , sleep is one of the massive time black hole , you put 1/3rd of you life in that blackhole with nothing, 1/3rd wtf is this some curse, the only most valubale thing in life and you HAVE to put 1/3rd no matter what, why isnt humanity trying to figure this shit out. They are way too fucking busy playing the game of money, and whatever , lot of things, that actually dont matter in the end. atleast for me .
 
 Idk need to stop, is this because of i got lot of free time to think , yeah i do think a lot, sometimes i wish to not think but then , all this fiction is emerges from thinking, it would take away the most important thing from me .
+
+(Several days later ...)
+
+its sunday today, around 3-4 days later, i had been meaning to write more in this post ever since last time because i had some conclusions that i came across .
+
+I have had this feeling earlier as well , not once but twice .. at least which i remember in the recent memory
+1st was one when i had rewatached the blade runner 2049 , and the next time was when i had finished playing signalis.
+Now you may already know about my signalis phase i have talked very extensively about it in here . But you might know that when i created this website i was going through my blade runner phase . Now when it happened with me again this third time , i noticed some similarities and have tried to come to some conclusions.
+
+The common thing in all three things was love , one that kind which feels so perfect that i feels wrong, like sometimes it feels like the entire existence of the other person is just for there partner, there arent no conflicts , just pure love , passion. 
+In Bladerunner 2049 it was love between K and Joi , two non humans, in there Joi has shown nothing but love for K, love in sense support , care, attention. like you matter.
+In Signalis , it was Ariane and Elster, one human and one bio engineered robot , a replika , The entire game itself is finding out partner and fulfilling one last promise. That game is also full of just pure love , there is no flaw shown in here between there love.
+In Dispatch , its between Rober and Mandy/Blonde Blazer , although this time both humans , not much was shown of there love since it is a choice based game and lot of people didnt really picked Mandy and the devs also did not had much but...
+wait i have already told about this game in the beginning of the post , i was gonna repeat myself lol.
+
+Although i do think music is really a big contribution in all of this, without music i am not sure if i would be able to experience emotions. But i think this is the common thing dreaming of such kind of partner but then also knowing the fact that something like that doesn't really exists in real life, and isn't even good for the other person to force them to play a role in my fantasy, i think that brings the sadness, not being able to experience something which is not really possible. its not just with love with human being but also lot of other things that make me sad. But i think with dispatch that is the case as i mentioned that scene in ep 7. In a case thats fiction, the unreality, and longing for fiction is real life is kinda strange.
+
+Conclusion - no real conclusion has been reached , i hate this feeling but if that means not being able to experience those fiction , i can keep suffering from this feeling .
+
+apart from the robert x mandy this game overall was so fun , i cant remember i had this much fun, it was light hearted yet serious at some points and all the characters and all the cast was so interesting to watch. And engaging with the community was so fun since the episodes where releasing weekly. I hope we get a season 2 , because if feels incorrect to leave such well developed cast on table.
