@@ -2,7 +2,7 @@
 layout: post
 title: "Ignorance, Blame, Responsibility"
 date: 2025-04-13 10:00:00 +0000
-categories: personal
+categories: life
 ---
  &nbsp;&nbsp;&nbsp;&nbsp;I have heard stories of lot of people on youtube, how when they were in school / university they got into bad stuff. Lots of difffrent types of regrets.Some regret that picked up smoking/drugs in the uni , some regret they got in company of wrong people , some regret wasting their time  and not giving their 100%. But in my case its quite different , I dont have any of these regrets. I tried to navigate around all of these situations because i knew what I wanted from the very start, but still life had planned something else for me. 
 
