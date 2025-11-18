@@ -3,7 +3,7 @@ layout: post
 title: "Remind, Me, Someday"
 date: 2025-11-13 10:00:00 +0000
 categories: personal
-image: "/assets/images/BB.jpg"
+image: "/assets/images/threshold.jpg"
 ---
 
 
@@ -81,6 +81,6 @@ I love it.
 Its called [Walkies by antimo and welles](https://youtu.be/TpIdjBc9V24?si=IbdfuCQmIh3dkdKM)
 The sadness has sure died down a bit, which is not a suprise . I dont know what to say more. Maybe i should start living in real life more than fiction.
 
-> I am not drunk enough to share you my origin story yet , but remind me someday
+> I am not drunk enough to share you my origin story yet , but remind me to tell you someday
 
 I would be waiting for that day. probably to tell my story or listen to someone's story.
