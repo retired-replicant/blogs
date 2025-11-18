@@ -2,7 +2,8 @@
 layout: post
 title: "Remind, Me, Someday"
 date: 2025-11-13 10:00:00 +0000
-categories: life
+categories: personal
+image: "/assets/images/BB.jpg"
 ---
 
 
