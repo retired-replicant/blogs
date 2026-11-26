@@ -38,7 +38,7 @@ and the above mentioned song is so good as well and the scene it played me is ma
 Kaori asks to arima when she is hospital after their performace - 
 "Have you been playing piano"
 
-![piano_wa_hiteru.png](/assets/images/piano_wa_hiteru.png)
+![piano_wa_hiteru.png](/blogs/assets/images/piano_wa_hiteru.png)
 
 and i busted in tears , with the music and especially with the shot aimed at the audience it felt like i was asked that question and it hurt a lot.
 

@@ -46,7 +46,7 @@ I wonder ...
 What awaits beyond the threshold
 
 
-![What awaits beyond the threshold](/assets/images/threshold.jpg "What awaits beyond the threshold")
+![What awaits beyond the threshold](/blogs/assets/images/threshold.jpg "What awaits beyond the threshold")
 
 Music Recommendation -  
 1. [New signalis album - Signalis Memories ](https://youtu.be/axMffgvNQOs?si=DTcHGaFGxnJhLSaK)

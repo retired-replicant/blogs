@@ -45,7 +45,7 @@
 {% for post in personal_posts limit:3 %}
   <a href="{{ post.url | relative_url }}" class="blog-card">
     <div class="card-image"
-      style="background-image: url('{% if post.image %}{{ post.image | relative_url }}{% else %}/assets/images/default-blog.jpg{% endif %}');">
+      style="background-image: url('{% if post.image %}{{ post.image | relative_url }}{% else %}{{ "/assets/images/default-blog.jpg" | relative_url }}{% endif %}');">
       <div class="card-category">{{ post.categories[0] }}</div>
     </div>
     <div class="card-content">

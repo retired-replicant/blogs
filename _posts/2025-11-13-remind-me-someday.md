@@ -38,7 +38,7 @@ its just that one part of me today wanted someone like mandy and leave everythin
 Maybe what i would like to do is play a part in game , play a protagonist in several games , playing side character in some other games, heck even play npc in some. i want to experience several life and meaning full ones . with skipping all the non meaning full stuff because you are not gonna remember that any way , like tell me how many memories do you have of yourself taking poop in the bathroom. You do that hundreds of time a year thousand in you life time , you are gonna spend majority of time in thing that dont matter but still you are gonna do that you need to do that you are forced to do that.
 
 But i cant have this scene where i am seating here with the billboard in the night , cold chilly breeze with nice emotionally deep music playing in the background.
-![BB.jpg](/assets/images/BB.jpg)
+![BB.jpg](/blogs/assets/images/BB.jpg)
 
 (several hours have passed...,)
 Its 1 .30 am right now, just got over a meeting, i am working like crazy i can work like crazy person , i can die working for my goals, but when the goals are impossible , i dont know what to do, give up? try to change my mindset , or try to forget it.

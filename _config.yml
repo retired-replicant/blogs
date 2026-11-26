@@ -3,7 +3,7 @@ title: Retired Replicant
 email: replicantretired@gmail.com
 description: >-
   A personal blog for synthetic souls.
-baseurl: ""
+baseurl: "/blogs"
 url: "https://retired-replicant.github.io"  # Make sure the URL is correct
 
 permalink: /blog/:title/

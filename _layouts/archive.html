@@ -115,7 +115,7 @@
              data-excerpt="{{ post.excerpt | strip_html | strip_newlines | truncatewords:30 | downcase }}"
              data-categories="{{ post.categories | join: '|' }}">
             <div class="card-image"
-                 style="background-image: url('{% if post.image %}{{ post.image | relative_url }}{% else %}/assets/images/default-blog.jpg{% endif %}');">
+                 style="background-image: url('{% if post.image %}{{ post.image | relative_url }}{% else %}{{ "/assets/images/default-blog.jpg" | relative_url }}{% endif %}');">
               <div class="card-category">
                 <span class="category-badge">{{ post.categories[0] }}</span>
               </div>
